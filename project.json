@@ -1,0 +1,634 @@
+{
+    "name": "[ Sifter ][ Extension ]",
+    "components": [
+        {
+            "name": "/App",
+            "graph": {
+                "connections": [],
+                "roots": [
+                    {
+                        "id": "246f9453-a119-ac78-171e-3806cf596ecc",
+                        "type": "Group",
+                        "label": "Background",
+                        "x": -111.4681915301291,
+                        "y": 311.4376377651178,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "137a009d-ba4d-078a-628c-1fbd694b1cf9",
+                                "type": "Group",
+                                "label": "Sidebar",
+                                "parameters": {
+                                    "backgroundColor": "#0000007F",
+                                    "width": {
+                                        "value": 300,
+                                        "unit": "px"
+                                    },
+                                    "alignX": "right"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "fd47589c-03e2-7358-6707-18bdb659a4cd",
+                                        "type": "Group",
+                                        "parameters": {
+                                            "backgroundColor": "#FFFFFF",
+                                            "width": {
+                                                "value": 100,
+                                                "unit": "px"
+                                            },
+                                            "height": {
+                                                "value": 100,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": [
+                                            {
+                                                "id": "45dadda4-af0f-0ed2-9889-ee421a6ccd36",
+                                                "type": "Text",
+                                                "parameters": {
+                                                    "text": "Hello World",
+                                                    "fontFamily": "fonts/Roboto/Roboto-Medium.ttf",
+                                                    "fontSize": {
+                                                        "value": 32,
+                                                        "unit": "px"
+                                                    },
+                                                    "sizeMode": "contentSize",
+                                                    "alignY": "center",
+                                                    "alignX": "center"
+                                                },
+                                                "ports": [],
+                                                "dynamicports": [],
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "canvasSize": {
+                    "width": "1039px",
+                    "height": "751px"
+                },
+                "canvasPos": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    ],
+    "settings": {},
+    "rootNodeId": "246f9453-a119-ac78-171e-3806cf596ecc",
+    "version": "3",
+    "metadata": {
+        "dbCollections": [],
+        "styles": {
+            "colors": {
+                "Primary": "#5836F5",
+                "Light Gray": "#C6C6C6",
+                "Dark Gray": "#434B53",
+                "Primary Dark": "#3F22B8",
+                "Dark": "#1F1F1F",
+                "Primary Light": "#C9BFFC"
+            },
+            "text": {
+                "Body Text": {
+                    "fontFamily": "fonts/Roboto/Roboto-Regular.ttf",
+                    "fontSize": {
+                        "value": "18",
+                        "unit": "px"
+                    },
+                    "color": "#000000"
+                },
+                "Button Label": {
+                    "fontFamily": "fonts/Roboto/Roboto-Regular.ttf",
+                    "fontSize": {
+                        "value": "16",
+                        "unit": "px"
+                    },
+                    "color": "#000000"
+                },
+                "Label Text": {
+                    "fontFamily": "fonts/Roboto/Roboto-Regular.ttf",
+                    "fontSize": {
+                        "value": "14",
+                        "unit": "px"
+                    },
+                    "color": "#000000"
+                }
+            }
+        }
+    },
+    "variants": [
+        {
+            "typename": "net.noodl.controls.button",
+            "parameters": {
+                "height": {
+                    "value": 40,
+                    "unit": "px"
+                },
+                "sizeMode": "contentWidth",
+                "backgroundColor": "Primary",
+                "iconIconSource": {
+                    "class": "material-icons",
+                    "code": "home"
+                },
+                "iconSize": {
+                    "value": 22,
+                    "unit": "px"
+                },
+                "iconSpacing": {
+                    "value": 6,
+                    "unit": "px"
+                },
+                "borderRadius": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "textStyle": "Button Label",
+                "paddingTop": {
+                    "value": 5,
+                    "unit": "px"
+                },
+                "paddingLeft": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "paddingBottom": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "color": "#FFFFFF",
+                "fontFamily": "fonts/Roboto/Roboto-Medium.ttf"
+            },
+            "stateParamaters": {
+                "hover": {
+                    "backgroundColor": "Primary Dark"
+                },
+                "pressed": {
+                    "backgroundColor": "Primary Light",
+                    "color": "Primary Dark"
+                },
+                "disabled": {
+                    "backgroundColor": "Light Gray"
+                }
+            },
+            "stateTransitions": {},
+            "defaultStateTransitions": {
+                "neutral": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "hover": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "pressed": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                }
+            }
+        },
+        {
+            "typename": "net.noodl.controls.radiobutton",
+            "parameters": {
+                "width": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "height": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "useLabel": true,
+                "labeltextStyle": "Label Text",
+                "borderWidth": {
+                    "value": 2,
+                    "unit": "px"
+                },
+                "value": "0",
+                "useIcon": false,
+                "fillColor": "transparent",
+                "borderColor": "#1F1F1F7F",
+                "labelfontSize": {
+                    "value": 16,
+                    "unit": "px"
+                }
+            },
+            "stateParamaters": {
+                "checked": {
+                    "fillColor": "Primary",
+                    "borderColor": "Primary",
+                    "borderWidth": {
+                        "value": 2,
+                        "unit": "px"
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "width": {
+                        "value": 24,
+                        "unit": "px"
+                    },
+                    "height": {
+                        "value": 24,
+                        "unit": "px"
+                    }
+                },
+                "hover": {
+                    "backgroundColor": "transparent",
+                    "borderColor": "Primary",
+                    "width": {
+                        "value": 24,
+                        "unit": "px"
+                    },
+                    "height": {
+                        "value": 24,
+                        "unit": "px"
+                    }
+                }
+            },
+            "stateTransitions": {},
+            "defaultStateTransitions": {
+                "neutral": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "hover": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "checked": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                }
+            }
+        },
+        {
+            "typename": "Text",
+            "parameters": {
+                "textStyle": "Body Text"
+            },
+            "stateParamaters": {},
+            "stateTransitions": {}
+        },
+        {
+            "typename": "net.noodl.controls.range",
+            "parameters": {
+                "thumbColor": "Primary",
+                "thumbBorderRadius": {
+                    "value": 100,
+                    "unit": "%"
+                },
+                "trackHeight": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "trackActiveColor": "Primary",
+                "trackColor": "Primary Light",
+                "width": {
+                    "value": 100,
+                    "unit": "%"
+                }
+            },
+            "stateParamaters": {},
+            "stateTransitions": {}
+        },
+        {
+            "typename": "net.noodl.controls.checkbox",
+            "parameters": {
+                "width": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "height": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "useIcon": false,
+                "borderWidth": {
+                    "value": 2,
+                    "unit": "px"
+                },
+                "useLabel": true,
+                "labeltextStyle": "Label Text",
+                "borderRadius": {
+                    "value": 2,
+                    "unit": "px"
+                },
+                "borderColor": "#0000007F",
+                "labelfontSize": {
+                    "value": 16,
+                    "unit": "px"
+                },
+                "labelcolor": "Dark"
+            },
+            "stateParamaters": {
+                "checked": {
+                    "useIcon": true,
+                    "iconIconSource": {
+                        "class": "material-icons",
+                        "code": "check"
+                    },
+                    "backgroundColor": "Primary",
+                    "borderColor": "Primary",
+                    "iconSize": {
+                        "value": 16,
+                        "unit": "px"
+                    }
+                },
+                "disabled": {
+                    "opacity": 0.5
+                },
+                "hover": {
+                    "borderColor": "Primary"
+                },
+                "pressed": {}
+            },
+            "stateTransitions": {},
+            "defaultStateTransitions": {
+                "neutral": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "hover": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "checked": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                }
+            }
+        },
+        {
+            "typename": "net.noodl.controls.textinput",
+            "parameters": {
+                "useLabel": true,
+                "sizeMode": "explicit",
+                "height": {
+                    "value": 40,
+                    "unit": "px"
+                },
+                "textStyle": "Body Text",
+                "borderStyle": "solid",
+                "borderRadius": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "borderWidth": {
+                    "value": 2,
+                    "unit": "px"
+                },
+                "borderColor": "#1F1F1F7F",
+                "labeltextStyle": "Label Text",
+                "paddingLeft": {
+                    "value": 8,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 8,
+                    "unit": "px"
+                },
+                "labelSpacing": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "placeholder": "Type here",
+                "labelcolor": "#1F1F1F7F",
+                "labeltextTransform": "uppercase",
+                "labelfontSize": {
+                    "value": 12,
+                    "unit": "px"
+                },
+                "labelfontFamily": "fonts/Roboto/Roboto-Medium.ttf"
+            },
+            "stateParamaters": {
+                "hover": {
+                    "labelcolor": "#000000",
+                    "borderColor": "Dark",
+                    "borderStyle": "solid"
+                },
+                "focused": {
+                    "borderColor": "Primary",
+                    "labelcolor": "Primary",
+                    "borderWidth": {
+                        "value": 2,
+                        "unit": "px"
+                    },
+                    "boxShadowEnabled": false,
+                    "boxShadowColor": "Primary",
+                    "borderStyle": "solid"
+                },
+                "disabled": {
+                    "labelcolor": "Light Gray",
+                    "backgroundColor": "Light Gray",
+                    "borderWidth": {
+                        "value": 1,
+                        "unit": "px"
+                    },
+                    "borderColor": "Light Gray"
+                }
+            },
+            "stateTransitions": {},
+            "defaultStateTransitions": {
+                "neutral": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "focused": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                }
+            }
+        },
+        {
+            "typename": "net.noodl.controls.options",
+            "parameters": {
+                "sizeMode": "explicit",
+                "height": {
+                    "value": 40,
+                    "unit": "px"
+                },
+                "borderWidth": {
+                    "value": 2,
+                    "unit": "px"
+                },
+                "borderRadius": {
+                    "value": 4,
+                    "unit": "px"
+                },
+                "borderColor": "#1F1F1F7F",
+                "boxShadowColor": "Dark Gray",
+                "useIcon": true,
+                "iconIconSource": {
+                    "class": "material-icons",
+                    "code": "expand_more"
+                },
+                "iconPlacement": "right",
+                "iconSize": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "paddingRight": {
+                    "value": 8,
+                    "unit": "px"
+                },
+                "textStyle": "Body Text",
+                "paddingLeft": {
+                    "value": 8,
+                    "unit": "px"
+                },
+                "marginTop": {
+                    "value": 24,
+                    "unit": "px"
+                },
+                "width": {
+                    "value": 75,
+                    "unit": "%"
+                },
+                "iconColor": "#1F1F1F7F"
+            },
+            "stateParamaters": {
+                "hover": {
+                    "borderColor": "Dark",
+                    "borderRadius": {
+                        "value": 4,
+                        "unit": "px"
+                    },
+                    "iconColor": "Dark",
+                    "iconSize": {
+                        "value": 24,
+                        "unit": "px"
+                    },
+                    "iconPlacement": "right"
+                },
+                "focused": {
+                    "borderColor": "Primary",
+                    "boxShadowColor": "Primary",
+                    "borderRadius": {
+                        "value": 4,
+                        "unit": "px"
+                    },
+                    "useIcon": true,
+                    "iconColor": "Primary",
+                    "iconIconSource": {
+                        "class": "material-icons",
+                        "code": "keyboard_arrow_up"
+                    },
+                    "iconSize": {
+                        "value": 24,
+                        "unit": "px"
+                    },
+                    "iconPlacement": "right"
+                },
+                "pressed": {
+                    "borderRadius": {
+                        "value": 4,
+                        "unit": "px"
+                    }
+                }
+            },
+            "stateTransitions": {},
+            "defaultStateTransitions": {
+                "neutral": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                },
+                "focused": {
+                    "curve": [
+                        0,
+                        0,
+                        0.58,
+                        1
+                    ],
+                    "dur": 300,
+                    "delay": 0
+                }
+            }
+        }
+    ]
+}
