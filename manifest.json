@@ -1,7 +1,7 @@
 {
   "name": "Sifter",
   "author": "John-Ferreira",
-  "manifest_version": 4,
+  "manifest_version": 3,
   "version": "1.0.0",
   "description": "Highlight paragraphs on web pages with different colors and store them for future use; search or revisit pages to retrieve the highlighted text.",
   "background": {"service_worker": "yawas-background.js"},
