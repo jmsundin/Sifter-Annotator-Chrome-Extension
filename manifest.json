@@ -30,7 +30,7 @@
   "action": {
     "default_title": "Sifter",
     "default_icon": "shifter_on_128.png",
-    "default_popup": "Sifter-side-bar.html"
+    "default_popup": "index.html"
   },
   "icons": {
     "128": "shifter_on_128.png"
